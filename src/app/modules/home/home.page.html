@@ -7,16 +7,11 @@
 <ion-content [fullscreen]="true">
   <!-- Interpolacion de datos -->
   <h1>Hola {{nombre}} Bienvenido</h1>
-  <div>
-    <label>Edad: 29</label>
-    <br>
-    <label>Correo: stevenparra@gmail.com</label>
-    <br>
-    <label>Profesion: Docente</label>
-    <app-info-usuario></app-info-usuario>
+  <div class="centrado">    
+    <app-info-usuario class="hola"></app-info-usuario>
+    <app-pagina></app-pagina>
+    <app-entregas></app-entregas>
   </div>
   <!-- Property binding, se debe poner entre corchetes para que se convierta en dinamico y entre comillas la variable -->
-  <ion-button [disabled]="bloqueado">Prueba</ion-button>
-  <ion-button (click)="bloquear()">Accionar</ion-button>
-  <app-info-usuario></app-info-usuario>
+  
 </ion-content>

@@ -1,12 +1,33 @@
-<p>
-  info-usuario works!
-</p>
-
 <div>
-  <p><strong>Nombre: </strong></p>
-  <p><strong>Fecha nacimiento: </strong></p>
-  <p><strong>Dirección: </strong></p>
-  <p><strong>Cuidad: </strong></p>
-  <p><strong>Pais: </strong></p>
-  <p><strong>Teléfono: </strong></p>
+  <ion-img [src]="rute" style="width: 70px;" alt="Descripción de la imagen"></ion-img>
+  <ion-item>
+    <ion-label>Nombre: </ion-label>
+    <ion-input [value]="nombre" placeholder="Ingresa tu nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dirección: </ion-label>
+    <ion-input
+      [value]="direccion"
+      placeholder="Ingresa tu dirección"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Número de telefono: </ion-label>
+    <ion-input
+      [value]="telefono"
+      placeholder="Ingresa tu número de telefono"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fecha de nacimiento: </ion-label>
+    <ion-input
+      [value]="fecha_nac"
+      placeholder="Ingrese la fecha en formato dd/mm/yyyy"
+    ></ion-input>
+  </ion-item>
+
+  <ion-input [(ngModel)]="texto"></ion-input>
+  <ion-button (click)="prueba()">Prueba compo</ion-button>
+
+
 </div>

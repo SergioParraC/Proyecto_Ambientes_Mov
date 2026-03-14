@@ -1,0 +1,33 @@
+  <ion-item>
+    <ion-label>Nombre de destinatario: </ion-label>
+    <ion-input 
+      [disabled]="bloqueado" 
+      placeholder="Ingresa tu nombre" 
+      [value] = "nombre"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dirección de destinatario: </ion-label>
+    <ion-input
+      [disabled]="bloqueado"
+      placeholder="Ingresa tu dirección"
+      [value] = "direccion"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Número de telefono de destinatario: </ion-label>
+    <ion-input
+      [disabled]="bloqueado"
+      placeholder="Ingresa tu número de telefono"
+      [value] = "telefono"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cuidad de destinatario: </ion-label>
+    <ion-input
+      [disabled]="bloqueado"
+      placeholder="Ingrese la cuidad"
+      [value] = "ciudad"
+    ></ion-input>
+  </ion-item>
+  <ion-button (click)="bloquear()">Activar el boton</ion-button>
