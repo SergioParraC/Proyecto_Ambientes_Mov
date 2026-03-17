@@ -29,5 +29,20 @@
   <ion-input [(ngModel)]="texto"></ion-input>
   <ion-button (click)="prueba()">Prueba compo</ion-button>
 
+  <div *ngIf="validador; else BloqueElse">
+    Este texto se visualiza si es true
+  </div>
+  <ng-template #BloqueElse>
 
+    Esto no se debe mostrar si es true
+
+  </ng-template>
+
+</div>
+
+<div>
+  <div *ngFor="let persona of lista; let i = index">
+    <label>{{persona.id}}</label>
+    <label>{{persona.nombre}}</label>
+  </div>
 </div>

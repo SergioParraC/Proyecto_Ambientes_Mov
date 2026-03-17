@@ -1,0 +1,27 @@
+  <ion-item>
+    <ion-label>Nombre: </ion-label>
+    <ion-input [(ngModel)]="nombre" placeholder="Ingresa tu nombre del producto"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label>Precio: </ion-label>
+    <ion-input [(ngModel)]="precio" placeholder="Ingresa el precio"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Descripción: </ion-label>
+    <ion-input [(ngModel)]="descripcion" placeholder="Ingresa uan descripción"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Imagen: </ion-label>
+    <ion-input [(ngModel)]="urlImagen" placeholder="Ingresa una imagen"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Puntuación: </ion-label>
+    <ion-input [(ngModel)]="puntuacion" placeholder="Ingresa la puntuación"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cantidad de personas que puntuaron: </ion-label>
+    <ion-input [(ngModel)]="cantPersonas" placeholder="Ingresa cantidad"></ion-input>
+  </ion-item>
+  <ion-button (click)="agregarProducto()">Agregar un producto</ion-button>
+

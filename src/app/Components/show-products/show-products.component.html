@@ -1,0 +1,19 @@
+
+<div *ngFor="let producto of lista">
+  <ion-card>
+    <img alt="Silhouette of mountains" [src]="producto.image" />
+    <ion-card-header>
+      <ion-card-title>{{producto.title}}</ion-card-title>
+      <ion-card-subtitle>$ {{producto.price}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      - {{producto.category}}
+      {{producto.description}}
+      <h5>Calificación:</h5>
+      <strong>Calificación média: </strong>{{producto.rating.rate}}
+      <br>
+      <strong>Reseñas: </strong>{{producto.rating.count}}
+    </ion-card-content>
+  </ion-card>
+</div>

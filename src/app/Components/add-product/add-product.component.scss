@@ -1,0 +1,51 @@
+:host {
+	display: block;
+}
+
+ion-item, ion-button {
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+ion-item {
+	margin-bottom: 16px;
+	--inner-padding-end: 12px;
+	--inner-padding-start: 12px;
+	--padding-top: 8px;
+	--padding-bottom: 8px;
+}
+
+ion-label {
+	min-width: 120px;
+	margin-right: 12px;
+	font-weight: 500;
+	color: #333;
+}
+
+ion-input {
+	--padding-start: 8px;
+	--padding-end: 8px;
+	background: #60d4e9;
+    color: black;
+	border-radius: 6px;
+}
+
+ion-button {
+	margin-top: 20px;
+}
+:host {
+	display: block;
+}
+
+ion-item, ion-button {
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+ion-button {
+	margin-top: 20px;
+}

@@ -15,4 +15,8 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () => import('./modules/home/home.page').then( m => m.HomePage)
   },
+  {
+    path: 'productos',
+    loadComponent: () => import('./modules/productos/productos.page').then( m => m.ProductosPage)
+  },
 ];
