@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent} from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
+import { Product } from 'src/app/data/interfaces/product';
 
 @Component({
   selector: 'app-show-products',
@@ -9,6 +10,8 @@ import { CommonModule } from '@angular/common';
   imports: [  IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, CommonModule ]
 })
 export class ShowProductsComponent  implements OnInit {
+
+  @Input() productosComponente: Product[] = []
 
   lista = [
     {
